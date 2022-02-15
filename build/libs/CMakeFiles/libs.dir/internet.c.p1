@@ -1,0 +1,592 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"23 G:/GP/PIC/DHCP/libs/include\internet.h
+[s S97 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
+[n S97 Node address mask routingMask child0 child1 ]
+"33
+[s S98 `uc -> 5 `i `uc 1 ]
+[n S98 NetworkInfo networkPipe defaultGateway ]
+"9 G:/GP/PIC/DHCP/libs/internet.c
+[c E932 0 1 2 3 4 5 7 .. ]
+[n E932 . RF24_DATA_PIPE_0 RF24_DATA_PIPE_1 RF24_DATA_PIPE_2 RF24_DATA_PIPE_3 RF24_DATA_PIPE_4 RF24_DATA_PIPE_5 RF24_DATA_PIPE_ALL  ]
+"88 G:/GP/PIC/DHCP/libs/include\rf24.h
+[v _RF24_setChannel `(v ~T0 @X0 0 ef1`uc ]
+"98
+[v _RF24_getDynamicPayloadSize `(uc ~T0 @X0 0 e? ]
+"100
+[v _RF24_read `(v ~T0 @X0 0 ef2`*uc`uc ]
+"40 G:/GP/PIC/DHCP/libs/include\internet.h
+[v _internet_rx `(v ~T0 @X0 0 ef2`*uc`uc ]
+"97 G:/GP/PIC/DHCP/libs/include\rf24.h
+[v _RF24_available `(uc ~T0 @X0 0 ef1`*E932 ]
+"14 C:\Program Files\Microchip\xc8\v2.35\pic\include\c90\string.h
+[v _memcpy `(*v ~T0 @X0 0 ef3`*v`*Cv`ui ]
+"94 G:/GP/PIC/DHCP/libs/include\rf24.h
+[v _RF24_openReadingPipe `(v ~T0 @X0 0 ef2`E932`*uc ]
+"5 G:/GP/PIC/DHCP/libs/include/packets.h
+[s S95 `uc 1 `uc 1 `uc 1 `uc 1 ]
+[n S95 Packet ttl protocol source destination ]
+"41 G:/GP/PIC/DHCP/libs/include\internet.h
+[v _internet_relay `(v ~T0 @X0 0 ef2`*uc`uc ]
+"15 G:/GP/PIC/DHCP/libs/include/transport.h
+[v _transport_udp_rx `(v ~T0 @X0 0 ef2`*uc`uc ]
+"42 G:/GP/PIC/DHCP/libs/include\internet.h
+[v _internet_calculateMask `(uc ~T0 @X0 0 ef1`uc ]
+"44
+[v _internet_hasChild `(uc ~T0 @X0 0 ef1`uc ]
+"93 G:/GP/PIC/DHCP/libs/include\rf24.h
+[v _RF24_openWritingPipe `(v ~T0 @X0 0 ef1`*uc ]
+"92
+[v _RF24_closeDataPipe `(v ~T0 @X0 0 ef1`E932 ]
+"101
+[v _RF24_write `(uc ~T0 @X0 0 ef2`*uc`uc ]
+"76
+[v _RF24_startListening `(v ~T0 @X0 0 e? ]
+"87
+[v _RF24_initialize `(v ~T0 @X0 0 e? ]
+"133 G:/GP/PIC/DHCP/libs/internet.c
+[c E927 0 1 2 .. ]
+[n E927 . RF24_DATARATE_250Kbps RF24_DATARATE_1Mbps RF24_DATARATE_2Mbps  ]
+"91 G:/GP/PIC/DHCP/libs/include\rf24.h
+[v _RF24_setDataRate `(v ~T0 @X0 0 ef1`E927 ]
+"134 G:/GP/PIC/DHCP/libs/internet.c
+[c E941 0 1 2 .. ]
+[n E941 . RF24_CRC_OFF RF24_CRC_1_BYTE RF24_CRC_2_BYTE  ]
+"102 G:/GP/PIC/DHCP/libs/include\rf24.h
+[v _RF24_setCRCEncoding `(v ~T0 @X0 0 ef1`E941 ]
+"95
+[v _RF24_enableDynamicPayloadLength `(v ~T0 @X0 0 ef1`E932 ]
+"136 G:/GP/PIC/DHCP/libs/internet.c
+[c E921 6 2 4 0 .. ]
+[n E921 . RF24_POWER_MAX RF24_POWER_HIGH RF24_POWER_LOW RF24_POWER_MIN  ]
+"90 G:/GP/PIC/DHCP/libs/include\rf24.h
+[v _RF24_setOutputPower `(v ~T0 @X0 0 ef1`E921 ]
+"103
+[v _RF24_setAutoAck `(v ~T0 @X0 0 ef2`E932`uc ]
+"105
+[v _RF24_setPayloadWidth `(v ~T0 @X0 0 ef2`E932`uc ]
+"146 G:/GP/PIC/DHCP/libs/internet.c
+[c E917 0 1 .. ]
+[n E917 . RF24_MODE_RECEIVER RF24_MODE_TRANSMETTER  ]
+"55 C:\Program Files\Microchip\xc8\v2.35\pic\include\proc\pic16f877a.h
+[; <" INDF equ 00h ;# ">
+"62
+[; <" TMR0 equ 01h ;# ">
+"69
+[; <" PCL equ 02h ;# ">
+"76
+[; <" STATUS equ 03h ;# ">
+"162
+[; <" FSR equ 04h ;# ">
+"169
+[; <" PORTA equ 05h ;# ">
+"219
+[; <" PORTB equ 06h ;# ">
+"281
+[; <" PORTC equ 07h ;# ">
+"343
+[; <" PORTD equ 08h ;# ">
+"405
+[; <" PORTE equ 09h ;# ">
+"437
+[; <" PCLATH equ 0Ah ;# ">
+"457
+[; <" INTCON equ 0Bh ;# ">
+"535
+[; <" PIR1 equ 0Ch ;# ">
+"597
+[; <" PIR2 equ 0Dh ;# ">
+"637
+[; <" TMR1 equ 0Eh ;# ">
+"644
+[; <" TMR1L equ 0Eh ;# ">
+"651
+[; <" TMR1H equ 0Fh ;# ">
+"658
+[; <" T1CON equ 010h ;# ">
+"733
+[; <" TMR2 equ 011h ;# ">
+"740
+[; <" T2CON equ 012h ;# ">
+"811
+[; <" SSPBUF equ 013h ;# ">
+"818
+[; <" SSPCON equ 014h ;# ">
+"888
+[; <" CCPR1 equ 015h ;# ">
+"895
+[; <" CCPR1L equ 015h ;# ">
+"902
+[; <" CCPR1H equ 016h ;# ">
+"909
+[; <" CCP1CON equ 017h ;# ">
+"967
+[; <" RCSTA equ 018h ;# ">
+"1062
+[; <" TXREG equ 019h ;# ">
+"1069
+[; <" RCREG equ 01Ah ;# ">
+"1076
+[; <" CCPR2 equ 01Bh ;# ">
+"1083
+[; <" CCPR2L equ 01Bh ;# ">
+"1090
+[; <" CCPR2H equ 01Ch ;# ">
+"1097
+[; <" CCP2CON equ 01Dh ;# ">
+"1155
+[; <" ADRESH equ 01Eh ;# ">
+"1162
+[; <" ADCON0 equ 01Fh ;# ">
+"1258
+[; <" OPTION_REG equ 081h ;# ">
+"1328
+[; <" TRISA equ 085h ;# ">
+"1378
+[; <" TRISB equ 086h ;# ">
+"1440
+[; <" TRISC equ 087h ;# ">
+"1502
+[; <" TRISD equ 088h ;# ">
+"1564
+[; <" TRISE equ 089h ;# ">
+"1621
+[; <" PIE1 equ 08Ch ;# ">
+"1683
+[; <" PIE2 equ 08Dh ;# ">
+"1723
+[; <" PCON equ 08Eh ;# ">
+"1757
+[; <" SSPCON2 equ 091h ;# ">
+"1819
+[; <" PR2 equ 092h ;# ">
+"1826
+[; <" SSPADD equ 093h ;# ">
+"1833
+[; <" SSPSTAT equ 094h ;# ">
+"2002
+[; <" TXSTA equ 098h ;# ">
+"2083
+[; <" SPBRG equ 099h ;# ">
+"2090
+[; <" CMCON equ 09Ch ;# ">
+"2160
+[; <" CVRCON equ 09Dh ;# ">
+"2225
+[; <" ADRESL equ 09Eh ;# ">
+"2232
+[; <" ADCON1 equ 09Fh ;# ">
+"2291
+[; <" EEDATA equ 010Ch ;# ">
+"2298
+[; <" EEADR equ 010Dh ;# ">
+"2305
+[; <" EEDATH equ 010Eh ;# ">
+"2312
+[; <" EEADRH equ 010Fh ;# ">
+"2319
+[; <" EECON1 equ 018Ch ;# ">
+"2364
+[; <" EECON2 equ 018Dh ;# ">
+"12 G:/GP/PIC/DHCP/libs/include\internet.h
+[v _BASE_PIPE `Cuc ~T0 @X0 -> 5 `i e ]
+[i _BASE_PIPE
+:U ..
+-> -> 89 `i `uc
+-> -> 236 `i `uc
+-> -> 173 `i `uc
+-> -> 252 `i `uc
+-> -> 132 `i `uc
+..
+]
+"13
+[v _BROADCAST_PIPE `Cuc ~T0 @X0 -> 5 `i e ]
+[i _BROADCAST_PIPE
+:U ..
+-> -> 249 `i `uc
+-> -> 54 `i `uc
+-> -> 205 `i `uc
+-> -> 172 `i `uc
+-> -> 231 `i `uc
+..
+]
+"4 G:/GP/PIC/DHCP/libs/internet.c
+[v _node `S97 ~T0 @X0 1 e ]
+"5
+[v _networkInfo `S98 ~T0 @X0 1 e ]
+"7
+[v _receivedPayloadBuffer `uc ~T0 @X0 -> 32 `i e ]
+"8
+[v _transmittedPayloadBuffer `uc ~T0 @X0 -> 32 `i e ]
+"9
+[v _availablePipeNo `E932 ~T0 @X0 1 e ]
+"10
+[v _internet_setChannel `(v ~T0 @X0 1 ef1`uc ]
+"11
+{
+[e :U _internet_setChannel ]
+"10
+[v _channel `uc ~T0 @X0 1 r1 ]
+"11
+[f ]
+"12
+[e ( _RF24_setChannel (1 _channel ]
+"13
+[e :UE 99 ]
+}
+"14
+[v _internet_process `(v ~T0 @X0 1 ef ]
+"15
+{
+[e :U _internet_process ]
+[f ]
+"16
+[e $U 101  ]
+[e :U 102 ]
+"17
+{
+"18
+[v _size `uc ~T0 @X0 1 a ]
+[e = _size ( _RF24_getDynamicPayloadSize ..  ]
+"19
+[e ( _RF24_read (2 , &U _receivedPayloadBuffer _size ]
+"20
+[e ( _internet_rx (2 , &U _receivedPayloadBuffer _size ]
+"21
+}
+[e :U 101 ]
+"16
+[e $ != -> ( _RF24_available (1 &U _availablePipeNo `i -> 0 `i 102  ]
+[e :U 103 ]
+"22
+[e :UE 100 ]
+}
+"23
+[v _internet_setNetworkPipe `(v ~T0 @X0 1 ef1`*uc ]
+"24
+{
+[e :U _internet_setNetworkPipe ]
+"23
+[v _pipe `*uc ~T0 @X0 1 r1 ]
+"24
+[f ]
+"25
+[e ( _memcpy (3 , , -> &U . _networkInfo 0 `*v -> _pipe `*Cv -> -> 5 `i `ui ]
+"26
+[e = *U + &U . _networkInfo 0 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _networkInfo 0 `ui `ux -> -> 0 `i `uc ]
+"27
+[e ( _RF24_openReadingPipe (2 , . `E932 1 -> | -> *U + &U . _networkInfo 0 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _networkInfo 0 `ui `ux `i -> . _node 0 `i `*uc ]
+"28
+[e :UE 104 ]
+}
+"29
+[v _internet_tx `(v ~T0 @X0 1 ef2`*uc`uc ]
+"30
+{
+[e :U _internet_tx ]
+"29
+[v _payload `*uc ~T0 @X0 1 r1 ]
+[v _size `uc ~T0 @X0 1 r2 ]
+"30
+[f ]
+"31
+[v _packetHeader `*S95 ~T0 @X0 1 a ]
+[e = _packetHeader -> _payload `*S95 ]
+"32
+[e = . *U _packetHeader 0 -> -> 32 `i `uc ]
+"33
+[e = . *U _packetHeader 2 . _node 0 ]
+"34
+[e ( _internet_relay (2 , _payload _size ]
+"35
+[e :UE 105 ]
+}
+"36
+[v _internet_rx `(v ~T0 @X0 1 ef2`*uc`uc ]
+"37
+{
+[e :U _internet_rx ]
+"36
+[v _payload `*uc ~T0 @X0 1 r1 ]
+[v _size `uc ~T0 @X0 1 r2 ]
+"37
+[f ]
+"38
+[v _packetHeader `*S95 ~T0 @X0 1 a ]
+[e = _packetHeader -> _payload `*S95 ]
+"39
+[e $ ! != -> . *U _packetHeader 3 `i -> . _node 0 `i 107  ]
+"40
+{
+"41
+[e ( _internet_relay (2 , _payload _size ]
+"42
+[e $UE 106  ]
+"43
+}
+[e :U 107 ]
+"44
+[e $U 109  ]
+"45
+{
+"46
+[e :U 110 ]
+"48
+[e $U 108  ]
+"49
+[e :U 111 ]
+"51
+[e $U 108  ]
+"52
+[e :U 112 ]
+"53
+[e ( _transport_udp_rx (2 , _payload _size ]
+"54
+[e $U 108  ]
+"55
+[e :U 113 ]
+"57
+[e $U 108  ]
+"58
+}
+[e $U 108  ]
+[e :U 109 ]
+[e [\ -> . *U _packetHeader 1 `i , $ -> 0 `i 110
+ , $ -> 2 `i 111
+ , $ -> 1 `i 112
+ 113 ]
+[e :U 108 ]
+"59
+[e :UE 106 ]
+}
+"60
+[v _internet_relay `(v ~T0 @X0 1 ef2`*uc`uc ]
+"61
+{
+[e :U _internet_relay ]
+"60
+[v _payload `*uc ~T0 @X0 1 r1 ]
+[v _size `uc ~T0 @X0 1 r2 ]
+"61
+[f ]
+"62
+[v _packetHeader `*S95 ~T0 @X0 1 a ]
+[e = _packetHeader -> _payload `*S95 ]
+"63
+[e $ ! == -> . _node 0 `i -> 0 `i 115  ]
+"64
+{
+"67
+[e $UE 114  ]
+"68
+}
+[e :U 115 ]
+"69
+[v _dstMask `uc ~T0 @X0 1 a ]
+[e = _dstMask ( _internet_calculateMask (1 . *U _packetHeader 3 ]
+"70
+[v _status `uc ~T0 @X0 1 a ]
+"71
+[e $ ! && > -> _dstMask `i -> . _node 1 `i != -> ( _internet_hasChild (1 . *U _packetHeader 3 `i -> 0 `i 116  ]
+"72
+{
+"73
+[e $ ! != & -> . *U _packetHeader 3 `i -> . _node 2 `i -> 0 `i 117  ]
+"74
+{
+"75
+[e = *U + &U . _networkInfo 0 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _networkInfo 0 `ui `ux . _node 4 ]
+"76
+[e ( _RF24_openReadingPipe (2 , . `E932 0 &U . _networkInfo 0 ]
+"77
+[e ( _RF24_openWritingPipe (1 &U . _networkInfo 0 ]
+"78
+[e ( _RF24_closeDataPipe (1 . `E932 6 ]
+"79
+[e ( _RF24_write (2 , _payload _size ]
+"80
+[e ( _RF24_openReadingPipe (2 , . `E932 0 -> &U _BASE_PIPE `*uc ]
+"81
+}
+[e $U 118  ]
+"82
+[e :U 117 ]
+"83
+{
+"84
+[e = *U + &U . _networkInfo 0 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _networkInfo 0 `ui `ux . _node 3 ]
+"85
+[e ( _RF24_openReadingPipe (2 , . `E932 0 &U . _networkInfo 0 ]
+"86
+[e ( _RF24_openWritingPipe (1 &U . _networkInfo 0 ]
+"87
+[e ( _RF24_closeDataPipe (1 . `E932 6 ]
+"88
+[e ( _RF24_write (2 , _payload _size ]
+"89
+[e ( _RF24_openReadingPipe (2 , . `E932 0 -> &U _BASE_PIPE `*uc ]
+"90
+}
+[e :U 118 ]
+"91
+}
+[e $U 119  ]
+"92
+[e :U 116 ]
+"93
+{
+"94
+[e = *U + &U . _networkInfo 0 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _networkInfo 0 `ui `ux . _node 0 ]
+"95
+[e ( _RF24_openReadingPipe (2 , . `E932 0 &U . _networkInfo 0 ]
+"96
+[e ( _RF24_openWritingPipe (1 -> . `E932 0 `*uc ]
+"97
+[e ( _RF24_closeDataPipe (1 . `E932 6 ]
+"98
+[e ( _RF24_write (2 , _payload _size ]
+"99
+[e ( _RF24_openReadingPipe (2 , . `E932 0 -> &U _BASE_PIPE `*uc ]
+"100
+}
+[e :U 119 ]
+"101
+[e ( _RF24_startListening ..  ]
+"102
+[e :UE 114 ]
+}
+"103
+[v _internet_calculateMask `(uc ~T0 @X0 1 ef1`uc ]
+"104
+{
+[e :U _internet_calculateMask ]
+"103
+[v _address `uc ~T0 @X0 1 r1 ]
+"104
+[f ]
+"105
+[v _mask `uc ~T0 @X0 1 a ]
+[e = _mask -> -> 0 `i `uc ]
+"106
+[e $U 121  ]
+[e :U 122 ]
+"107
+{
+"108
+[e = _mask -> | << -> _mask `i -> 1 `i -> 1 `i `uc ]
+"109
+[e =>> _address -> -> 1 `i `uc ]
+"110
+}
+[e :U 121 ]
+"106
+[e $ > -> _address `i -> 1 `i 122  ]
+[e :U 123 ]
+"111
+[e ) _mask ]
+[e $UE 120  ]
+"112
+[e :UE 120 ]
+}
+"114
+[v _internet_setAddress `(v ~T0 @X0 1 ef1`uc ]
+"115
+{
+[e :U _internet_setAddress ]
+"114
+[v _address `uc ~T0 @X0 1 r1 ]
+"115
+[f ]
+"116
+[e = . _node 0 _address ]
+"117
+[e = . _node 1 ( _internet_calculateMask (1 _address ]
+"118
+[e = . _node 2 -> + -> . _node 1 `i -> 1 `i `uc ]
+"119
+[e = . _node 3 -> | & -> . _node 0 `i -> . _node 1 `i << -> . _node 2 `i -> 1 `i `uc ]
+"120
+[e = . _node 4 -> | | & -> . _node 0 `i -> . _node 1 `i << -> . _node 2 `i -> 1 `i -> . _node 2 `i `uc ]
+"121
+[e ( _internet_setNetworkPipe (1 &U . _networkInfo 0 ]
+"122
+[e :UE 124 ]
+}
+"124
+[v _internet_hasChild `(uc ~T0 @X0 1 ef1`uc ]
+"125
+{
+[e :U _internet_hasChild ]
+"124
+[v _address `uc ~T0 @X0 1 r1 ]
+"125
+[f ]
+"126
+[e ) -> -> == & -> _address `i -> . _node 1 `i & -> . _node 0 `i -> . _node 1 `i `i `uc ]
+[e $UE 125  ]
+"127
+[e :UE 125 ]
+}
+"129
+[v _initializeRF24 `(v ~T0 @X0 1 ef ]
+"130
+{
+[e :U _initializeRF24 ]
+[f ]
+"131
+[e ( _RF24_initialize ..  ]
+"132
+[e ( _RF24_openReadingPipe (2 , . `E932 0 -> &U _BASE_PIPE `*uc ]
+"133
+[e ( _RF24_setDataRate (1 . `E927 1 ]
+"134
+[e ( _RF24_setCRCEncoding (1 . `E941 1 ]
+"135
+[e ( _RF24_enableDynamicPayloadLength (1 . `E932 6 ]
+"136
+[e ( _RF24_setOutputPower (1 . `E921 0 ]
+"137
+[e ( _RF24_setAutoAck (2 , . `E932 6 -> -> 1 `i `uc ]
+"139
+[e ( _RF24_startListening ..  ]
+"141
+[e ( _RF24_setPayloadWidth (2 , -> -> 0 `i `E932 -> -> 32 `i `uc ]
+"142
+[e :UE 126 ]
+}
+"143
+[v _startListeningBroadcasts `(v ~T0 @X0 1 ef ]
+"144
+{
+[e :U _startListeningBroadcasts ]
+[f ]
+"145
+[e ( _RF24_setAutoAck (2 , . `E932 0 -> -> 1 `i `uc ]
+"146
+[e ( _RF24_startListening . `E917 0 ]
+"147
+[e :UE 127 ]
+}
+"148
+[v _internet_getTransmissionBuffer `(*uc ~T0 @X0 1 ef ]
+"149
+{
+[e :U _internet_getTransmissionBuffer ]
+[f ]
+"150
+[e ) &U _transmittedPayloadBuffer ]
+[e $UE 128  ]
+"151
+[e :UE 128 ]
+}
+"152
+[v _internet_getRecievingBuffer `(*uc ~T0 @X0 1 ef ]
+"153
+{
+[e :U _internet_getRecievingBuffer ]
+[f ]
+"154
+[e ) &U _receivedPayloadBuffer ]
+[e $UE 129  ]
+"155
+[e :UE 129 ]
+}

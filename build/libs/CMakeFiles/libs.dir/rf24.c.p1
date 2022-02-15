@@ -1,0 +1,1052 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"2994 C:\Program Files\Microchip\xc8\v2.35\pic\include\proc\pic16f877a.h
+[v _TRISD2 `Vb ~T0 @X0 0 e@1090 ]
+"2997
+[v _TRISD3 `Vb ~T0 @X0 0 e@1091 ]
+"2760
+[v _RD2 `Vb ~T0 @X0 0 e@66 ]
+"2763
+[v _RD3 `Vb ~T0 @X0 0 e@67 ]
+"8 G:/GP/PIC/DHCP/libs/include/wait.h
+[v _waitMillis `(v ~T0 @X0 0 ef1`uc ]
+"119 G:/GP/PIC/DHCP/libs/include\rf24_internals.h
+[v _readStatus `(uc ~T0 @X0 0 e? ]
+"85
+[v _writeRegister `(uc ~T0 @X0 0 ef2`uc`uc ]
+"9 G:/GP/PIC/DHCP/libs/include/spi_master.h
+[v _SPI_exchangeByte `(uc ~T0 @X0 0 ef1`uc ]
+"91 G:/GP/PIC/DHCP/libs/rf24.c
+[c E902 0 1 2 .. ]
+[n E902 . RF24_DATARATE_250Kbps RF24_DATARATE_1Mbps RF24_DATARATE_2Mbps  ]
+"112
+[c E896 6 2 4 0 .. ]
+[n E896 . RF24_POWER_MAX RF24_POWER_HIGH RF24_POWER_LOW RF24_POWER_MIN  ]
+"120
+[c E907 0 1 2 3 4 5 7 .. ]
+[n E907 . RF24_DATA_PIPE_0 RF24_DATA_PIPE_1 RF24_DATA_PIPE_2 RF24_DATA_PIPE_3 RF24_DATA_PIPE_4 RF24_DATA_PIPE_5 RF24_DATA_PIPE_ALL  ]
+"265
+[c E916 0 1 2 .. ]
+[n E916 . RF24_CRC_OFF RF24_CRC_1_BYTE RF24_CRC_2_BYTE  ]
+"55 C:\Program Files\Microchip\xc8\v2.35\pic\include\proc\pic16f877a.h
+[; <" INDF equ 00h ;# ">
+"62
+[; <" TMR0 equ 01h ;# ">
+"69
+[; <" PCL equ 02h ;# ">
+"76
+[; <" STATUS equ 03h ;# ">
+"162
+[; <" FSR equ 04h ;# ">
+"169
+[; <" PORTA equ 05h ;# ">
+"219
+[; <" PORTB equ 06h ;# ">
+"281
+[; <" PORTC equ 07h ;# ">
+"343
+[; <" PORTD equ 08h ;# ">
+"405
+[; <" PORTE equ 09h ;# ">
+"437
+[; <" PCLATH equ 0Ah ;# ">
+"457
+[; <" INTCON equ 0Bh ;# ">
+"535
+[; <" PIR1 equ 0Ch ;# ">
+"597
+[; <" PIR2 equ 0Dh ;# ">
+"637
+[; <" TMR1 equ 0Eh ;# ">
+"644
+[; <" TMR1L equ 0Eh ;# ">
+"651
+[; <" TMR1H equ 0Fh ;# ">
+"658
+[; <" T1CON equ 010h ;# ">
+"733
+[; <" TMR2 equ 011h ;# ">
+"740
+[; <" T2CON equ 012h ;# ">
+"811
+[; <" SSPBUF equ 013h ;# ">
+"818
+[; <" SSPCON equ 014h ;# ">
+"888
+[; <" CCPR1 equ 015h ;# ">
+"895
+[; <" CCPR1L equ 015h ;# ">
+"902
+[; <" CCPR1H equ 016h ;# ">
+"909
+[; <" CCP1CON equ 017h ;# ">
+"967
+[; <" RCSTA equ 018h ;# ">
+"1062
+[; <" TXREG equ 019h ;# ">
+"1069
+[; <" RCREG equ 01Ah ;# ">
+"1076
+[; <" CCPR2 equ 01Bh ;# ">
+"1083
+[; <" CCPR2L equ 01Bh ;# ">
+"1090
+[; <" CCPR2H equ 01Ch ;# ">
+"1097
+[; <" CCP2CON equ 01Dh ;# ">
+"1155
+[; <" ADRESH equ 01Eh ;# ">
+"1162
+[; <" ADCON0 equ 01Fh ;# ">
+"1258
+[; <" OPTION_REG equ 081h ;# ">
+"1328
+[; <" TRISA equ 085h ;# ">
+"1378
+[; <" TRISB equ 086h ;# ">
+"1440
+[; <" TRISC equ 087h ;# ">
+"1502
+[; <" TRISD equ 088h ;# ">
+"1564
+[; <" TRISE equ 089h ;# ">
+"1621
+[; <" PIE1 equ 08Ch ;# ">
+"1683
+[; <" PIE2 equ 08Dh ;# ">
+"1723
+[; <" PCON equ 08Eh ;# ">
+"1757
+[; <" SSPCON2 equ 091h ;# ">
+"1819
+[; <" PR2 equ 092h ;# ">
+"1826
+[; <" SSPADD equ 093h ;# ">
+"1833
+[; <" SSPSTAT equ 094h ;# ">
+"2002
+[; <" TXSTA equ 098h ;# ">
+"2083
+[; <" SPBRG equ 099h ;# ">
+"2090
+[; <" CMCON equ 09Ch ;# ">
+"2160
+[; <" CVRCON equ 09Dh ;# ">
+"2225
+[; <" ADRESL equ 09Eh ;# ">
+"2232
+[; <" ADCON1 equ 09Fh ;# ">
+"2291
+[; <" EEDATA equ 010Ch ;# ">
+"2298
+[; <" EEADR equ 010Dh ;# ">
+"2305
+[; <" EEDATH equ 010Eh ;# ">
+"2312
+[; <" EEADRH equ 010Fh ;# ">
+"2319
+[; <" EECON1 equ 018Ch ;# ">
+"2364
+[; <" EECON2 equ 018Dh ;# ">
+"3 G:/GP/PIC/DHCP/libs/rf24.c
+[v _temp0 `uc ~T0 @X0 1 e ]
+[v _temp1 `uc ~T0 @X0 1 e ]
+"5
+[v _RF24_initialize `(v ~T0 @X0 1 ef ]
+"6
+{
+[e :U _RF24_initialize ]
+[f ]
+"7
+[e = _TRISD2 -> -> 0 `i `b ]
+"8
+[e = _TRISD3 -> -> 0 `i `b ]
+"9
+[e = _RD2 -> -> 0 `i `b ]
+"10
+[e = _RD3 -> -> 1 `i `b ]
+"11
+[e ( _waitMillis (1 -> -> 10 `i `uc ]
+"15
+[e = _temp0 ( _readStatus ..  ]
+"16
+[e ( _writeRegister (2 , -> -> 7 `i `uc _temp0 ]
+"17
+[e :UE 95 ]
+}
+"18
+[v _writeRegister `(uc ~T0 @X0 1 ef2`uc`uc ]
+"19
+{
+[e :U _writeRegister ]
+"18
+[v _mnemonic_addr `uc ~T0 @X0 1 r1 ]
+[v _value `uc ~T0 @X0 1 r2 ]
+"19
+[f ]
+"20
+[e = _RD3 -> -> 0 `i `b ]
+"21
+[e = _temp0 ( _SPI_exchangeByte (1 -> | -> 32 `i -> _mnemonic_addr `i `uc ]
+"22
+[e ( _SPI_exchangeByte (1 _value ]
+"23
+[e = _RD3 -> -> 1 `i `b ]
+"26
+[e ) _temp0 ]
+[e $UE 96  ]
+"27
+[e :UE 96 ]
+}
+"29
+[v _writeMultibyteRegister `(v ~T0 @X0 1 ef3`uc`*uc`uc ]
+"30
+{
+[e :U _writeMultibyteRegister ]
+"29
+[v _mnemonic_addr `uc ~T0 @X0 1 r1 ]
+[v _buffer `*uc ~T0 @X0 1 r2 ]
+[v _length `uc ~T0 @X0 1 r3 ]
+"30
+[f ]
+"31
+[e = _RD3 -> -> 0 `i `b ]
+"32
+[e ( _SPI_exchangeByte (1 -> | -> 32 `i -> _mnemonic_addr `i `uc ]
+"33
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $U 101  ]
+[e :U 98 ]
+"34
+{
+"35
+[e ( _SPI_exchangeByte (1 *U + _buffer * -> _i `ux -> -> # *U _buffer `ui `ux ]
+"36
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 101 ]
+[e $ < -> _i `i -> _length `i 98  ]
+[e :U 99 ]
+}
+"37
+[e = _RD3 -> -> 1 `i `b ]
+"38
+[e :UE 97 ]
+}
+"40
+[v _readRegister `(uc ~T0 @X0 1 ef1`uc ]
+"41
+{
+[e :U _readRegister ]
+"40
+[v _mnemonic_addr `uc ~T0 @X0 1 r1 ]
+"41
+[f ]
+"42
+[e = _RD3 -> -> 0 `i `b ]
+"43
+[e ( _SPI_exchangeByte (1 -> | -> 0 `i -> _mnemonic_addr `i `uc ]
+"44
+[e = _temp0 ( _SPI_exchangeByte (1 -> -> 255 `i `uc ]
+"45
+[e = _RD3 -> -> 1 `i `b ]
+"46
+[e ) _temp0 ]
+[e $UE 102  ]
+"47
+[e :UE 102 ]
+}
+"49
+[v _readMultibyteRegister `(v ~T0 @X0 1 ef3`uc`*uc`uc ]
+"50
+{
+[e :U _readMultibyteRegister ]
+"49
+[v _mnemonic_addr `uc ~T0 @X0 1 r1 ]
+[v _buffer `*uc ~T0 @X0 1 r2 ]
+[v _length `uc ~T0 @X0 1 r3 ]
+"50
+[f ]
+"51
+[e = _RD3 -> -> 0 `i `b ]
+"52
+[e ( _SPI_exchangeByte (1 -> | -> 0 `i -> _mnemonic_addr `i `uc ]
+"53
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $U 107  ]
+[e :U 104 ]
+"54
+{
+"55
+[e = *U + _buffer * -> _i `ux -> -> # *U _buffer `ui `ux ( _SPI_exchangeByte (1 -> -> 255 `i `uc ]
+"56
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 107 ]
+[e $ < -> _i `i -> _length `i 104  ]
+[e :U 105 ]
+}
+"57
+[e = _RD3 -> -> 1 `i `b ]
+"58
+[e :UE 103 ]
+}
+"60
+[v _readStatus `(uc ~T0 @X0 1 ef ]
+"61
+{
+[e :U _readStatus ]
+[f ]
+"62
+[e = _RD3 -> -> 0 `i `b ]
+"63
+[e = _temp0 ( _SPI_exchangeByte (1 -> -> 255 `i `uc ]
+"64
+[e = _RD3 -> -> 1 `i `b ]
+"65
+[e ) _temp0 ]
+[e $UE 108  ]
+"66
+[e :UE 108 ]
+}
+"68
+[v _RF24_startListening `(v ~T0 @X0 1 ef ]
+"69
+{
+[e :U _RF24_startListening ]
+[f ]
+"70
+[e = _temp0 ( _readRegister (1 -> -> 0 `i `uc ]
+"72
+[e =| _temp0 -> << -> 1 `ul -> 0 `i `uc ]
+"73
+[e = _RD2 -> -> 1 `i `b ]
+"74
+[e ( _writeRegister (2 , -> -> 0 `i `uc _temp0 ]
+"75
+[e :UE 109 ]
+}
+"76
+[v _RF24_stopListening `(v ~T0 @X0 1 ef ]
+"77
+{
+[e :U _RF24_stopListening ]
+[f ]
+"78
+[e = _temp0 ( _readRegister (1 -> -> 0 `i `uc ]
+"80
+[e =& _temp0 -> ~ << -> 1 `ul -> 0 `i `uc ]
+"81
+[e = _RD2 -> -> 1 `i `b ]
+"82
+[e ( _writeRegister (2 , -> -> 0 `i `uc _temp0 ]
+"83
+[e :UE 110 ]
+}
+"85
+[v _RF24_setChannel `(v ~T0 @X0 1 ef1`uc ]
+"86
+{
+[e :U _RF24_setChannel ]
+"85
+[v _channel `uc ~T0 @X0 1 r1 ]
+"86
+[f ]
+"87
+[e =& _channel -> ~ << -> 1 `ul -> 7 `i `uc ]
+"88
+[e ( _writeRegister (2 , -> -> 5 `i `uc _channel ]
+"89
+[e :UE 111 ]
+}
+"91
+[v _RF24_setDataRate `(v ~T0 @X0 1 ef1`E902 ]
+"92
+{
+[e :U _RF24_setDataRate ]
+"91
+[v _rate `E902 ~T0 @X0 1 r1 ]
+"92
+[f ]
+"93
+[e = _temp0 ( _readRegister (1 -> -> 6 `i `uc ]
+"94
+[e $ ! == -> _rate `ui -> . `E902 0 `ui 113  ]
+"95
+{
+"96
+[e =| _temp0 -> << -> 1 `ul -> 5 `i `uc ]
+"97
+[e =& _temp0 -> ~ << -> 1 `ul -> 3 `i `uc ]
+"98
+}
+[e $U 114  ]
+"99
+[e :U 113 ]
+[e $ ! == -> _rate `ui -> . `E902 1 `ui 115  ]
+"100
+{
+"101
+[e =& _temp0 -> ~ << -> 1 `ul -> 5 `i `uc ]
+"102
+[e =& _temp0 -> ~ << -> 1 `ul -> 3 `i `uc ]
+"103
+}
+[e $U 116  ]
+"104
+[e :U 115 ]
+[e $ ! == -> _rate `ui -> . `E902 2 `ui 117  ]
+"105
+{
+"106
+[e =& _temp0 -> ~ << -> 1 `ul -> 5 `i `uc ]
+"107
+[e =| _temp0 -> << -> 1 `ul -> 3 `i `uc ]
+"108
+}
+[e :U 117 ]
+[e :U 116 ]
+[e :U 114 ]
+"109
+[e ( _writeRegister (2 , -> -> 6 `i `uc _temp0 ]
+"110
+[e :UE 112 ]
+}
+"112
+[v _RF24_setOutputPower `(v ~T0 @X0 1 ef1`E896 ]
+"113
+{
+[e :U _RF24_setOutputPower ]
+"112
+[v _power `E896 ~T0 @X0 1 r1 ]
+"113
+[f ]
+"114
+[e = _temp0 ( _readRegister (1 -> -> 6 `i `uc ]
+"115
+[e =& _temp0 -> ~ << -> 1 `ul -> 2 `i `uc ]
+"116
+[e =& _temp0 -> ~ << -> 1 `ul -> 1 `i `uc ]
+"117
+[e ( _writeRegister (2 , -> -> 6 `i `uc -> | -> _temp0 `ui -> _power `ui `uc ]
+"118
+[e :UE 118 ]
+}
+"120
+[v _RF24_openDataPipe `(v ~T0 @X0 1 ef1`E907 ]
+"121
+{
+[e :U _RF24_openDataPipe ]
+"120
+[v _pipe `E907 ~T0 @X0 1 r1 ]
+"121
+[f ]
+"122
+[e $ ! == -> _pipe `ui -> . `E907 6 `ui 120  ]
+"123
+{
+"124
+[e ( _writeRegister (2 , -> -> 2 `i `uc -> -> 63 `i `uc ]
+"125
+}
+[e $U 121  ]
+"126
+[e :U 120 ]
+"127
+{
+"128
+[e = _temp0 ( _readRegister (1 -> -> 2 `i `uc ]
+"129
+[e =| _temp0 -> << -> 1 `ul -> _pipe `ui `uc ]
+"130
+[e ( _writeRegister (2 , -> -> 2 `i `uc _temp0 ]
+"131
+}
+[e :U 121 ]
+"132
+[e :UE 119 ]
+}
+"134
+[v _RF24_closeDataPipe `(v ~T0 @X0 1 ef1`E907 ]
+"135
+{
+[e :U _RF24_closeDataPipe ]
+"134
+[v _pipe `E907 ~T0 @X0 1 r1 ]
+"135
+[f ]
+"136
+[e $ ! == -> _pipe `ui -> . `E907 6 `ui 123  ]
+"137
+{
+"138
+[e ( _writeRegister (2 , -> -> 2 `i `uc -> -> 0 `i `uc ]
+"139
+}
+[e $U 124  ]
+"140
+[e :U 123 ]
+"141
+{
+"142
+[e = _temp0 ( _readRegister (1 -> -> 2 `i `uc ]
+"143
+[e =& _temp0 -> ~ << -> 1 `ul -> _pipe `ui `uc ]
+"144
+[e ( _writeRegister (2 , -> -> 2 `i `uc _temp0 ]
+"145
+}
+[e :U 124 ]
+"146
+[e :UE 122 ]
+}
+"148
+[v _RF24_openWritingPipe `(v ~T0 @X0 1 ef1`*uc ]
+"149
+{
+[e :U _RF24_openWritingPipe ]
+"148
+[v _addressBytes `*uc ~T0 @X0 1 r1 ]
+"149
+[f ]
+"150
+[e = _temp0 -> + & -> ( _readRegister (1 -> -> 3 `i `uc `i -> 3 `i -> 2 `i `uc ]
+"151
+[e ( _writeMultibyteRegister (3 , , -> -> 16 `i `uc _addressBytes _temp0 ]
+"152
+[e :UE 125 ]
+}
+"154
+[v _RF24_openReadingPipe `(v ~T0 @X0 1 ef2`E907`*uc ]
+"155
+{
+[e :U _RF24_openReadingPipe ]
+"154
+[v _pipe `E907 ~T0 @X0 1 r1 ]
+[v _addressBytes `*uc ~T0 @X0 1 r2 ]
+"155
+[f ]
+"156
+[e $ ! == -> _pipe `ui -> . `E907 6 `ui 127  ]
+"157
+[e $UE 126  ]
+[e :U 127 ]
+"158
+[e = _temp0 -> + & -> ( _readRegister (1 -> -> 3 `i `uc `i -> 3 `i -> 2 `i `uc ]
+"159
+[e $ ! > -> _pipe `ui -> -> 1 `i `ui 128  ]
+"160
+{
+"161
+[e = _temp1 ( _readRegister (1 -> -> 11 `i `uc ]
+"162
+[e ( _writeMultibyteRegister (3 , , -> -> 11 `i `uc _addressBytes _temp0 ]
+"163
+[e ( _writeRegister (2 , -> -> 11 `i `uc _temp1 ]
+"164
+[e ( _writeRegister (2 , -> + -> -> 10 `i `ui -> _pipe `ui `uc *U + _addressBytes * -> -> 0 `i `x -> -> # *U _addressBytes `i `x ]
+"165
+}
+[e $U 129  ]
+"166
+[e :U 128 ]
+"167
+[e ( _writeMultibyteRegister (3 , , -> + -> -> 10 `i `ui -> _pipe `ui `uc _addressBytes _temp0 ]
+[e :U 129 ]
+"168
+[e :UE 126 ]
+}
+"170
+[v _RF24_enableDynamicPayloadLength `(v ~T0 @X0 1 ef1`E907 ]
+"171
+{
+[e :U _RF24_enableDynamicPayloadLength ]
+"170
+[v _pipe `E907 ~T0 @X0 1 r1 ]
+"171
+[f ]
+"172
+[e = _temp0 ( _readRegister (1 -> -> 29 `i `uc ]
+"173
+[e =| _temp0 -> << -> 1 `ul -> 2 `i `uc ]
+"174
+[e ( _writeRegister (2 , -> -> 29 `i `uc _temp0 ]
+"175
+[e $ ! == -> _pipe `ui -> . `E907 6 `ui 131  ]
+"176
+{
+"177
+[e ( _writeRegister (2 , -> -> 28 `i `uc -> -> 63 `i `uc ]
+"178
+}
+[e $U 132  ]
+"179
+[e :U 131 ]
+"180
+{
+"181
+[e = _temp0 ( _readRegister (1 -> -> 28 `i `uc ]
+"182
+[e =| _temp0 -> << -> 1 `ul -> _pipe `ui `uc ]
+"183
+[e ( _writeRegister (2 , -> -> 28 `i `uc _temp0 ]
+"184
+}
+[e :U 132 ]
+"185
+[e :UE 130 ]
+}
+"187
+[v _RF24_disableDynamicPayloadLength `(v ~T0 @X0 1 ef1`E907 ]
+"188
+{
+[e :U _RF24_disableDynamicPayloadLength ]
+"187
+[v _pipe `E907 ~T0 @X0 1 r1 ]
+"188
+[f ]
+"189
+[e $ ! == -> _pipe `ui -> . `E907 6 `ui 134  ]
+"190
+{
+"191
+[e ( _writeRegister (2 , -> -> 28 `i `uc -> -> 0 `i `uc ]
+"192
+}
+[e $U 135  ]
+"193
+[e :U 134 ]
+"194
+{
+"195
+[e = _temp0 ( _readRegister (1 -> -> 28 `i `uc ]
+"196
+[e =& _temp0 -> ~ << -> 1 `ul -> _pipe `ui `uc ]
+"197
+[e ( _writeRegister (2 , -> -> 28 `i `uc _temp0 ]
+"198
+}
+[e :U 135 ]
+"199
+[e :UE 133 ]
+}
+"201
+[v _RF24_available `(uc ~T0 @X0 1 ef1`*E907 ]
+"202
+{
+[e :U _RF24_available ]
+"201
+[v _pipeNo `*E907 ~T0 @X0 1 r1 ]
+"202
+[f ]
+"203
+[e = _temp0 -> & >> -> ( _readStatus ..  `i -> 1 `i -> 7 `i `uc ]
+"204
+[e = *U + _pipeNo * -> -> 0 `i `x -> -> # *U _pipeNo `i `x -> _temp0 `E907 ]
+"206
+[e ) -> ~ -> _temp0 `i `uc ]
+[e $UE 136  ]
+"207
+[e :UE 136 ]
+}
+"209
+[v _RF24_getDynamicPayloadSize `(uc ~T0 @X0 1 ef ]
+"210
+{
+[e :U _RF24_getDynamicPayloadSize ]
+[f ]
+"211
+[e = _RD3 -> -> 0 `i `b ]
+"212
+[e ( _SPI_exchangeByte (1 -> -> 96 `i `uc ]
+"213
+[e = _temp0 ( _SPI_exchangeByte (1 -> -> 255 `i `uc ]
+"214
+[e = _RD3 -> -> 1 `i `b ]
+"215
+[e ) _temp0 ]
+[e $UE 137  ]
+"216
+[e :UE 137 ]
+}
+"218
+[v _RF24_isChipConnected `(uc ~T0 @X0 1 ef ]
+"219
+{
+[e :U _RF24_isChipConnected ]
+[f ]
+"220
+[e = _temp0 -> & -> ( _readRegister (1 -> -> 3 `i `uc `i -> 3 `i `uc ]
+"221
+[e $ ! && > -> _temp0 `i -> 0 `i < -> _temp0 `i -> 4 `i 139  ]
+"222
+{
+"223
+[e ) -> -> 1 `i `uc ]
+[e $UE 138  ]
+"224
+}
+[e :U 139 ]
+"225
+[e ) -> -> 0 `i `uc ]
+[e $UE 138  ]
+"226
+[e :UE 138 ]
+}
+"228
+[v _RF24_read `(v ~T0 @X0 1 ef2`*uc`uc ]
+"229
+{
+[e :U _RF24_read ]
+"228
+[v _buffer `*uc ~T0 @X0 1 r1 ]
+[v _length `uc ~T0 @X0 1 r2 ]
+"229
+[f ]
+"231
+[e = _temp0 ( _readStatus ..  ]
+"232
+[e ( _writeRegister (2 , -> -> 7 `i `uc _temp0 ]
+"233
+[e = _RD3 -> -> 0 `i `b ]
+"234
+[e ( _SPI_exchangeByte (1 -> -> 97 `i `uc ]
+"235
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $U 144  ]
+[e :U 141 ]
+"236
+{
+"237
+[e = *U + _buffer * -> _i `ux -> -> # *U _buffer `ui `ux ( _SPI_exchangeByte (1 -> -> 255 `i `uc ]
+"238
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 144 ]
+[e $ < -> _i `i -> _length `i 141  ]
+[e :U 142 ]
+}
+"239
+[e = _RD3 -> -> 1 `i `b ]
+"240
+[e :UE 140 ]
+}
+"241
+[v _RF24_write `(uc ~T0 @X0 1 ef2`*uc`uc ]
+"242
+{
+[e :U _RF24_write ]
+"241
+[v _buffer `*uc ~T0 @X0 1 r1 ]
+[v _length `uc ~T0 @X0 1 r2 ]
+"242
+[f ]
+"243
+[e = _RD2 -> -> 0 `i `b ]
+"244
+[e = _RD3 -> -> 0 `i `b ]
+"245
+[e ( _SPI_exchangeByte (1 -> -> 160 `i `uc ]
+"246
+{
+[e = _temp0 -> -> 0 `i `uc ]
+[e $U 149  ]
+[e :U 146 ]
+"247
+{
+"248
+[e ( _SPI_exchangeByte (1 *U + _buffer * -> _temp0 `ux -> -> # *U _buffer `ui `ux ]
+"249
+}
+[e ++ _temp0 -> -> 1 `i `uc ]
+[e :U 149 ]
+[e $ < -> _temp0 `i -> _length `i 146  ]
+[e :U 147 ]
+}
+"250
+[e = _RD3 -> -> 1 `i `b ]
+"252
+[e = _RD2 -> -> 1 `i `b ]
+"253
+[e ( _waitMillis (1 -> -> 15 `i `uc ]
+"254
+[e = _RD2 -> -> 0 `i `b ]
+"255
+[e $U 150  ]
+[e :U 151 ]
+"256
+[e :U 150 ]
+"255
+[e $ ! != & -> = _temp0 ( _readStatus ..  `i -> 48 `i -> 0 `i 151  ]
+[e :U 152 ]
+"257
+[e ( _writeRegister (2 , -> -> 7 `i `uc _temp0 ]
+"258
+[e $ ! != & -> _temp0 `i -> 16 `i -> 0 `i 153  ]
+"259
+{
+"260
+[e ) -> -> 0 `i `uc ]
+[e $UE 145  ]
+"261
+}
+[e :U 153 ]
+"262
+[e ) -> -> 1 `i `uc ]
+[e $UE 145  ]
+"263
+[e :UE 145 ]
+}
+"265
+[v _RF24_setCRCEncoding `(v ~T0 @X0 1 ef1`E916 ]
+"266
+{
+[e :U _RF24_setCRCEncoding ]
+"265
+[v _encoding `E916 ~T0 @X0 1 r1 ]
+"266
+[f ]
+"269
+[e = _temp0 ( _readRegister (1 -> -> 0 `i `uc ]
+"270
+[e $ ! == -> _encoding `ui -> . `E916 1 `ui 155  ]
+"271
+{
+"272
+[e =| _temp0 -> << -> 1 `ul -> 3 `i `uc ]
+"273
+[e =& _temp0 -> ~ << -> 1 `ul -> 2 `i `uc ]
+"274
+}
+[e $U 156  ]
+"275
+[e :U 155 ]
+[e $ ! == -> _encoding `ui -> . `E916 2 `ui 157  ]
+"276
+{
+"277
+[e =| _temp0 -> << -> 1 `ul -> 3 `i `uc ]
+"278
+[e =| _temp0 -> << -> 1 `ul -> 2 `i `uc ]
+"279
+}
+[e $U 158  ]
+"280
+[e :U 157 ]
+[e $ ! != -> . `E916 0 `i -> 0 `i 159  ]
+"281
+{
+"282
+[e =& _temp0 -> ~ << -> 1 `ul -> 3 `i `uc ]
+"283
+}
+[e :U 159 ]
+[e :U 158 ]
+[e :U 156 ]
+"284
+[e ( _writeRegister (2 , -> -> 0 `i `uc _temp0 ]
+"285
+[e :UE 154 ]
+}
+"286
+[v _RF24_powerUp `(v ~T0 @X0 1 ef1`uc ]
+"287
+{
+[e :U _RF24_powerUp ]
+"286
+[v _upOrDown `uc ~T0 @X0 1 r1 ]
+"287
+[f ]
+"288
+[e = _temp0 ( _readRegister (1 -> -> 0 `i `uc ]
+"289
+[e $ ! != -> _upOrDown `i -> 0 `i 161  ]
+"290
+[e =| _temp0 -> << -> 1 `ul -> 1 `i `uc ]
+[e $U 162  ]
+"291
+[e :U 161 ]
+"292
+[e =& _temp0 -> ~ << -> 1 `ul -> 1 `i `uc ]
+[e :U 162 ]
+"293
+[e ( _writeRegister (2 , -> -> 0 `i `uc _temp0 ]
+"294
+[e ( _waitMillis (1 -> -> 10 `i `uc ]
+"298
+[e :UE 160 ]
+}
+"300
+[v _RF24_setPayloadWidth `(v ~T0 @X0 1 ef2`E907`uc ]
+"301
+{
+[e :U _RF24_setPayloadWidth ]
+"300
+[v _pipe `E907 ~T0 @X0 1 r1 ]
+[v _width `uc ~T0 @X0 1 r2 ]
+"301
+[f ]
+"302
+[e $ ! == -> _pipe `ui -> . `E907 6 `ui 164  ]
+"303
+{
+"304
+[e ( _writeRegister (2 , -> -> 17 `i `uc -> & -> _width `i -> 63 `i `uc ]
+"305
+[e ( _writeRegister (2 , -> -> 18 `i `uc -> & -> _width `i -> 63 `i `uc ]
+"306
+[e ( _writeRegister (2 , -> -> 19 `i `uc -> & -> _width `i -> 63 `i `uc ]
+"307
+[e ( _writeRegister (2 , -> -> 20 `i `uc -> & -> _width `i -> 63 `i `uc ]
+"308
+[e ( _writeRegister (2 , -> -> 21 `i `uc -> & -> _width `i -> 63 `i `uc ]
+"309
+[e ( _writeRegister (2 , -> -> 22 `i `uc -> & -> _width `i -> 63 `i `uc ]
+"310
+}
+[e $U 165  ]
+"311
+[e :U 164 ]
+"312
+[e ( _writeRegister (2 , -> + -> -> 17 `i `ui -> _pipe `ui `uc -> & -> _width `i -> 63 `i `uc ]
+[e :U 165 ]
+"313
+[e :UE 163 ]
+}
+"314
+[v _RF24_setAutoAck `(v ~T0 @X0 1 ef2`E907`uc ]
+"315
+{
+[e :U _RF24_setAutoAck ]
+"314
+[v _pipe `E907 ~T0 @X0 1 r1 ]
+[v _enabledOrDisabled `uc ~T0 @X0 1 r2 ]
+"315
+[f ]
+"316
+[e $ ! == -> _pipe `ui -> . `E907 6 `ui 167  ]
+"317
+{
+"318
+[e ( _writeRegister (2 , -> -> 1 `i `uc -> ? != -> _enabledOrDisabled `i -> 0 `i : -> 63 `i -> 0 `i `uc ]
+"319
+[e $UE 166  ]
+"320
+}
+[e :U 167 ]
+"321
+[e = _temp0 ( _readRegister (1 -> -> 1 `i `uc ]
+"322
+[e $ ! != -> _enabledOrDisabled `i -> 0 `i 168  ]
+"323
+{
+"324
+[e =| _temp0 -> << -> 1 `ul -> _pipe `ui `uc ]
+"325
+}
+[e $U 169  ]
+"326
+[e :U 168 ]
+"327
+{
+"328
+[e =& _temp0 -> ~ << -> 1 `ul -> _pipe `ui `uc ]
+"329
+}
+[e :U 169 ]
+"330
+[e ( _writeRegister (2 , -> -> 1 `i `uc _temp0 ]
+"331
+[e :UE 166 ]
+}
+[v F1044 `(uc ~T0 @X0 1 tf ]
+"333
+[v _RF24_isCarierDetected `TF1044 ~T0 @X0 1 e ]
+"334
+{
+[e :U _RF24_isCarierDetected ]
+[f ]
+"335
+[e ) -> & -> ( _readRegister (1 -> -> 9 `i `uc `i -> 1 `i `uc ]
+[e $UE 170  ]
+"336
+[e :UE 170 ]
+}
+"338
+[v _debug_status `uc ~T0 @X0 1 e ]
+"339
+[v _debug_en_rxaddr `uc ~T0 @X0 1 e ]
+[v _debug_channel `uc ~T0 @X0 1 e ]
+[v _debug_config_reg `uc ~T0 @X0 1 e ]
+[v _debug_en_aa `uc ~T0 @X0 1 e ]
+[v _debug_carrier_detect `uc ~T0 @X0 1 e ]
+[v _debug_rf_setup `uc ~T0 @X0 1 e ]
+"340
+[v _debug_rx_addr_p0 `uc ~T0 @X0 -> 5 `i e ]
+[v _debug_rx_addr_p1 `uc ~T0 @X0 -> 5 `i e ]
+[v _debug_tx_addr `uc ~T0 @X0 -> 5 `i e ]
+[v _dubug_getPayLOadSize `uc ~T0 @X0 1 e ]
+"342
+[v _RF24_debug `(v ~T0 @X0 1 ef ]
+"343
+{
+[e :U _RF24_debug ]
+[f ]
+"345
+[e = _debug_status ( _readStatus ..  ]
+"346
+[e ( _readMultibyteRegister (3 , , -> -> 10 `i `uc &U _debug_rx_addr_p0 -> -> 5 `i `uc ]
+"347
+[e ( _readMultibyteRegister (3 , , -> -> 11 `i `uc &U _debug_rx_addr_p1 -> -> 5 `i `uc ]
+"348
+[e ( _readMultibyteRegister (3 , , -> -> 16 `i `uc &U _debug_tx_addr -> -> 5 `i `uc ]
+"349
+[e = _debug_en_rxaddr ( _readRegister (1 -> -> 2 `i `uc ]
+"350
+[e = _debug_channel ( _readRegister (1 -> -> 5 `i `uc ]
+"351
+[e = _debug_config_reg ( _readRegister (1 -> -> 0 `i `uc ]
+"352
+[e = _debug_en_aa ( _readRegister (1 -> -> 1 `i `uc ]
+"353
+[e = _debug_carrier_detect ( _readRegister (1 -> -> 9 `i `uc ]
+"354
+[e = _debug_rf_setup ( _readRegister (1 -> -> 6 `i `uc ]
+"356
+[e = _dubug_getPayLOadSize ( _RF24_getDynamicPayloadSize ..  ]
+"357
+[; <" nop ;# ">
+"358
+[e :UE 171 ]
+}
+"373
+[v _RF24_flashTX `(v ~T0 @X0 1 ef ]
+"374
+{
+[e :U _RF24_flashTX ]
+[f ]
+"375
+[e ( _writeRegister (2 , -> -> 225 `i `uc -> -> 1 `i `uc ]
+"376
+[e $UE 172  ]
+"377
+[e :UE 172 ]
+}
+"378
+[v _RF24_flashRX `(v ~T0 @X0 1 ef ]
+"379
+{
+[e :U _RF24_flashRX ]
+[f ]
+"380
+[e ( _writeRegister (2 , -> -> 226 `i `uc -> -> 1 `i `uc ]
+"381
+[e $UE 173  ]
+"382
+[e :UE 173 ]
+}

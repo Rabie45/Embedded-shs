@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../hal/include-public/hal/hal.h
+
+G:/GP/PIC/DHCP/hal/src/hal.c
+hal/hal.h
+G:/GP/PIC/DHCP/hal/src/hal/hal.h
+xc.h
+-
+

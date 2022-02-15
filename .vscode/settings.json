@@ -1,0 +1,9 @@
+{
+  "C_c.errorSquiggles": "Disabled",
+  "files.associations": {
+    "internet.h": "c",
+    "transport.h": "c",
+    "util.h": "c"
+  },
+  "C_Cpp.errorSquiggles": "Disabled"
+}
